@@ -50,7 +50,7 @@ class UI{
         const div = document.createElement('div');
         div.classList.add('person');
         div.innerHTML=`
-        <img src="images/person-${random}.jpeg"
+        <img src="images/person-${random}.jpg"
             alt="person" class="person_thumbnail">
         <h4 class="person_name">${customer.name}</h4>
         <h4 class="person_lname">${customer.lastname}</h4>`
@@ -79,6 +79,7 @@ class UI{
         document.querySelector('.work-model').classList.remove('work-model--show');
     }
 }
+
 function Customer(name, lastname, email) {
     this.name = name,
     this.lastname = lastname,
